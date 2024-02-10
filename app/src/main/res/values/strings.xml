@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">StudentsInfo</string>
+    <array name="stuname_ID">
+        <item>Sedra-1200987</item>
+        <item>Ahmad-12000342</item>
+        <item>Aseel-1200333</item>
+        <item>Ali-11922321</item>
+        <item>yousef-1209873</item>
+        <item>yafa-1230876</item>
+        <item>leen-1209866</item>
+        <item>Souud-1237765</item>
+
+    </array>
+    <string name="col1">Stu Name</string>
+    <string name="col2">Stu ID</string>
+    <string name="col3">Order ID</string>
+    <string name="col4">Food Id</string>
+    <string name="col5">Mobile num</string>
+    <string name="col6">Status-Ready?Pending?</string>
+    <string name="stuDesc">this is user description  for all itemss</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID: #12345"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOrderId"
+        android:layout_marginTop="8dp"
+        android:text="Student Name: Raymaa Elayyan"
+        android:textSize="16sp" />
+
+    <!-- Add a RatingBar for rating -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStudentName"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:stepSize="1"
+        />
+
+    <!-- Accept and Ignore Buttons -->
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonIgnore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ignore"
+        android:layout_below="@id/buttonAccept"
+        android:layout_marginTop="8dp"
+        />
+</RelativeLayout>
