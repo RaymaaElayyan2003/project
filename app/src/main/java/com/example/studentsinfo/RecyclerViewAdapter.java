@@ -39,13 +39,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Students student = list.get(position);
-        holder.profileImage.setImageResource(student.getImageProf());
+//        holder.profileImage.setImageResource(student.getImageProf());
         holder.username.setText(student.getUserName());
         holder.userDesc.setText(student.getUserDes());
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, ViewActivity.class);
-            intent.putExtra("imageProf", student.getImageProf());
+//            intent.putExtra("imageProf", student.getImageProf());
             intent.putExtra("stuname_ID", student.getUserName());
             intent.putExtra("stuDesc", student.getUserDes());
             context.startActivity(intent);
