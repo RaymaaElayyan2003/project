@@ -16,7 +16,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> implements Filterable {
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> implements Filterable {
     Context context;
     List<Students> list;
     List<Students> listFull;
@@ -87,6 +89,13 @@ import de.hdodenhof.circleimageview.CircleImageView;public class RecyclerViewAda
             notifyDataSetChanged(); // Notify adapter of data change
         }
     };
+
+    public void updateList(List<Students> filteredList) {
+        list.clear();
+        list.addAll(filteredList);
+        notifyDataSetChanged();
+    }
+
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         CircleImageView profileImage;
